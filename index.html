@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-33848682-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  window.dataLayer.push(arguments);
+}
+gtag('js', new Date());
+gtag('config', 'UA-33848682-1');
+</script>
+
+<meta charset="utf-8">
+<meta name="description" content="Emotions from camera">
+
+<title>Emotions from camera</title>
+
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+<div id="container">
+
+  <div class="select">
+    <label for="videoSource">Video source: </label><select id="videoSource"></select>
+    <button id="screenshot-button">Screen</button>
+    <img src="">
+    <canvas style="display:none;"></canvas>
+  </div>
+
+  <video muted autoplay></video>
+
+  <script src="js/main.js"></script>
+
+</div>
+
+</body>
+</html>
