@@ -4,39 +4,52 @@
 <head>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-33848682-1"></script>
+<script src="//code.jquery.com/jquery-3.1.1.js"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
-function gtag() {
-  window.dataLayer.push(arguments);
-}
-gtag('js', new Date());
-gtag('config', 'UA-33848682-1');
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-33848682-1');
 </script>
 
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Emotions from camera">
-
 <title>Emotions from camera</title>
 
-<link rel="stylesheet" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/main.css">
+
 </head>
 
 <body>
 
-<div id="container">
-
-  <div class="select">
-    <label for="videoSource">Video source: </label><select id="videoSource"></select>
-    <button id="screenshot-button">Screen</button>
-    <img src="">
-    <canvas style="display:none;"></canvas>
+<div class="container">
+  <div class="row">
+  <div class="navigation">
+    <button id="start-button" class="btn btn-success btn-lg">Start</button>
+    <button id="stop-button" class="btn btn-danger btn-lg">Stop</button>
   </div>
-
-  <video muted autoplay></video>
-
-  <script src="js/main.js"></script>
-
+  <div class="video-section"> 
+    <div id="results" class="alert alert-success">
+      Wyniki
+    </div>
+    <canvas style="display:none;"></canvas>
+    <video muted autoplay></video>
+  </div>
+  <div class="sub-input">
+    <label for="inputKey">Subscription key: </label>
+    <input type="text" name="inputKey" id="inputKey" class="form-control"/>
+  </div>
+  <div class="camera-input">
+    <label for="videoSource">Video source: </label>
+    <select id="videoSource" class="form-control"></select>
+  </div>
+  </div>
 </div>
-
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,39 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+label {
+  padding-right: 10px;
+}
+.container {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+}
+.sub-input, .camera-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.sub-input input {
+  width: 200px;
+}
+
+.camera-input select {
+  width: 200px;
+}
+
+.navigation {
+  margin-top: 0px;
+}
+
+video {
+  height: 280px;
+}
+
+#results {
+  max-width: 340px;
+  margin-top: 10px;
+}
