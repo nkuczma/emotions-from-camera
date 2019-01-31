@@ -100,7 +100,7 @@ function processImage(img) {
           contentType: "application/octet-stream",
           headers: {
             'Content-Type': 'application/octet-stream',
-            'Ocp-Apim-Subscription-Key': '85e993b533e64898a9cf7fc6be2b968d'
+            'Ocp-Apim-Subscription-Key': subscriptionKey
           },
           crossDomain: true,
           processData: false,
